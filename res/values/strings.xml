@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, Date!</string>
-    <string name="app_name">Test Login</string>
-    <string name="strInputAccHint">输入帐号</string>
-    <string name="strAccInputLabel">帐号</string>
-    <string name="strPswInputLabel">密码</string>
-    <string name="opt_remember">记住密码</string>
-    <string name="login">登 录</string>
-    <string name="opt_hideLogin">隐身登录</string>
-    <string name="opt_silent">静音登录</string>
-    <string name="opt_openVibra">开启振动</string>
-    <string name="opt_acceptGroupMsg">接收群消息</string>
+    <string name="app_name">iTeamer</string>
+    
+    <string name="mates">mates</string>
+    <string name="mates_tab">团队成员</string>
+    
+    <string name="location">location</string>
+    <string name="location_tab">团队身影</string>
+    
+    <string name="news">news</string>
+    <string name="news_tab">团队号外</string>
+    
+    <string name="meeting">meeting</string>
+    <string name="meeting_tab">会议提醒</string>
+    
 </resources>

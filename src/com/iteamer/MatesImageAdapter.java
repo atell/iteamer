@@ -1,5 +1,7 @@
 package com.iteamer;
 
+import com.iteamer.model.Mate;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.view.View;
@@ -9,7 +11,11 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 public class MatesImageAdapter extends BaseAdapter {
-	int matesGalleryItemBackground;
+	
+	private Mate mate;
+	
+	
+	private int matesGalleryItemBackground;
 	private Context context;
 
 	private Integer[] matesImageIds = { R.drawable.mates_1, R.drawable.mates_2,
@@ -22,6 +28,13 @@ public class MatesImageAdapter extends BaseAdapter {
 		matesGalleryItemBackground = arrt.getResourceId(
 				R.styleable.mates_gallery_android_galleryItemBackground, 0);
 		arrt.recycle();
+		
+		Mate mate = new Mate();
+		mate.setEmail(System.currentTimeMillis()+"@");
+		mate.setPwd("123");
+		mate.setName("atell");
+		this.setMate(mate);
+		
 	}
 
 	public int getCount() {
@@ -46,4 +59,14 @@ public class MatesImageAdapter extends BaseAdapter {
 
 		return i;
 	}
+
+	public Mate getMate() {
+		return mate;
+	}
+
+	public void setMate(Mate mate) {
+		this.mate = mate;
+	}
+	
+	
 }

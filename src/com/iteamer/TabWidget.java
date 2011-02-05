@@ -19,7 +19,7 @@ public class TabWidget extends TabActivity {
 		Intent intent; // Reusable Intent for each tab
 
 		// Create an Intent to launch an Activity for the tab (to be reused)
-		intent = new Intent().setClass(this, IteamerActivity.class);
+		intent = new Intent().setClass(this, MatesActivity.class);
 		String mates = this.getResources().getString(R.string.mates);
 		String matesTab = this.getResources().getString(R.string.mates_tab);
 		spec = tabHost.newTabSpec(mates).setIndicator(matesTab,
